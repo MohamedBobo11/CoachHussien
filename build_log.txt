@@ -1,0 +1,24 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Program Files\dotnet\sdk\10.0.100-rc.2.25502.107\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(351,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\CoachHussien.Domain.csproj]
+C:\Program Files\dotnet\sdk\10.0.100-rc.2.25502.107\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(351,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [D:\Coach_Hussien\CoachHussien\CoachHussien.Application\CoachHussien.Application.csproj]
+D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\Entities\FoodCategory.cs(11,16): warning CS8618: Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\CoachHussien.Domain.csproj]
+D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\Entities\Food.cs(13,23): warning CS8618: Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\CoachHussien.Domain.csproj]
+D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\Entities\Food.cs(20,29): warning CS8618: Non-nullable property 'Category' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\CoachHussien.Domain.csproj]
+  CoachHussien.Domain -> D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\bin\Debug\net9.0\CoachHussien.Domain.dll
+C:\Program Files\dotnet\sdk\10.0.100-rc.2.25502.107\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(351,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\CoachHussien.MVC.csproj]
+  CoachHussien.Application -> D:\Coach_Hussien\CoachHussien\CoachHussien.Application\bin\Debug\net9.0\CoachHussien.Application.dll
+D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\Program.cs(7,35): error CS0246: The type or namespace name 'ApplicationDbContext' could not be found (are you missing a using directive or an assembly reference?) [D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\CoachHussien.MVC.csproj]
+D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\Program.cs(7,22): error CS1061: 'IServiceCollection' does not contain a definition for 'AddDbContext' and no accessible extension method 'AddDbContext' accepting a first argument of type 'IServiceCollection' could be found (are you missing a using directive or an assembly reference?) [D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\CoachHussien.MVC.csproj]
+
+Build FAILED.
+
+D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\Entities\FoodCategory.cs(11,16): warning CS8618: Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\CoachHussien.Domain.csproj]
+D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\Entities\Food.cs(13,23): warning CS8618: Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\CoachHussien.Domain.csproj]
+D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\Entities\Food.cs(20,29): warning CS8618: Non-nullable property 'Category' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\CoachHussien.Domain.csproj]
+D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\Program.cs(7,35): error CS0246: The type or namespace name 'ApplicationDbContext' could not be found (are you missing a using directive or an assembly reference?) [D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\CoachHussien.MVC.csproj]
+D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\Program.cs(7,22): error CS1061: 'IServiceCollection' does not contain a definition for 'AddDbContext' and no accessible extension method 'AddDbContext' accepting a first argument of type 'IServiceCollection' could be found (are you missing a using directive or an assembly reference?) [D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\CoachHussien.MVC.csproj]
+    3 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:02.20

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CoachHussien.Domain/1.0.0": {
+        "runtime": {
+          "CoachHussien.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CoachHussien.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
