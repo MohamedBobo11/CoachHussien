@@ -49,18 +49,17 @@ namespace CoachHussien.MVC.Controllers
             var foods = await _foodService.GetFoodsByCategoryAsync(categoryId);
             model.Foods = new SelectList(foods, "Id", "Name");
 
-            if (model.BaseFoodId == 0 || model.AlternativeFoodId == 0 || model.BaseWeight <= 0)
+            if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("", "Please select valid foods and weight.");
                 return View(model);
             }
 
-            var baseFood = await _foodService.GetFoodByIdAsync(model.BaseFoodId);
-            var altFood = await _foodService.GetFoodByIdAsync(model.AlternativeFoodId);
+            var baseFood = await _foodService.GetFoodByIdAsync(model.BaseFoodId.Value);
+            var altFood = await _foodService.GetFoodByIdAsync(model.AlternativeFoodId.Value);
 
             if (baseFood == null || altFood == null)
             {
-                ModelState.AddModelError("", "Food not found.");
+                ModelState.AddModelError("", "عفوا، الطعام غير موجود.");
                 return View(model);
             }
 
@@ -92,7 +91,7 @@ namespace CoachHussien.MVC.Controllers
 
             if (altMacroValue == 0)
             {
-                ModelState.AddModelError("", $"Alternative food has 0 {model.SelectedMacro}, cannot calculate.");
+                ModelState.AddModelError("", "الطعام البديل لا يحتوي على العنصر الغذائي المختار، لا يمكن الحساب.");
                 return View(model);
             }
 

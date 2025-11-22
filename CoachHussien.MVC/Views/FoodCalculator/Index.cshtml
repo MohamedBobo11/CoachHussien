@@ -579,7 +579,7 @@
 
             <div class="mb-3">
                 <label class="form-label">وزن الطعام:</label>
-                <input asp-for="BaseWeight" class="form-control" placeholder="100" />
+                <input asp-for="BaseWeight" class="form-control" placeholder="0.00" />
                 <div class="text-white mt-1">جرام</div>
             </div>
 
@@ -599,27 +599,27 @@
                 <tbody>
                     <tr>
                         <td>الوزن (جرام)</td>
-                        <td>@Model.BaseWeight.ToString("0.00")</td>
+                        <td>@Model.BaseWeight.Value.ToString("0.00")</td>
                         <td>@Model.ResultWeight.Value.ToString("0.00")</td>
                     </tr>
                     <tr>
                         <td>السعرات الحرارية</td>
-                        <td>@((Model.BaseWeight * Model.BaseFoodDetails.Calories / 100).ToString("0.00"))</td>
+                        <td>@((Model.BaseWeight.Value * Model.BaseFoodDetails.Calories / 100).ToString("0.00"))</td>
                         <td>@((Model.ResultWeight.Value * Model.AlternativeFoodDetails.Calories / 100).ToString("0.00"))</td>
                     </tr>
                     <tr>
                         <td>البروتين</td>
-                        <td>@((Model.BaseWeight * Model.BaseFoodDetails.Protein / 100).ToString("0.00"))</td>
+                        <td>@((Model.BaseWeight.Value * Model.BaseFoodDetails.Protein / 100).ToString("0.00"))</td>
                         <td>@((Model.ResultWeight.Value * Model.AlternativeFoodDetails.Protein / 100).ToString("0.00"))</td>
                     </tr>
                      <tr>
                         <td>الكربوهيدرات</td>
-                        <td>@((Model.BaseWeight * Model.BaseFoodDetails.Carbs / 100).ToString("0.00"))</td>
+                        <td>@((Model.BaseWeight.Value * Model.BaseFoodDetails.Carbs / 100).ToString("0.00"))</td>
                         <td>@((Model.ResultWeight.Value * Model.AlternativeFoodDetails.Carbs / 100).ToString("0.00"))</td>
                     </tr>
                      <tr>
                         <td>الدهون</td>
-                        <td>@((Model.BaseWeight * Model.BaseFoodDetails.Fat / 100).ToString("0.00"))</td>
+                        <td>@((Model.BaseWeight.Value * Model.BaseFoodDetails.Fat / 100).ToString("0.00"))</td>
                         <td>@((Model.ResultWeight.Value * Model.AlternativeFoodDetails.Fat / 100).ToString("0.00"))</td>
                     </tr>
                 </tbody>
@@ -694,14 +694,18 @@
         }
 
         function updateChoices(choicesInstance, foods) {
-            choicesInstance.clearChoices();
-            choicesInstance.setChoices(
-                foods.map(food => ({
+            const choices = [
+                { value: '', label: 'اختر الطعام', selected: true, disabled: true, placeholder: true },
+                ...foods.map(food => ({
                     value: food.id,
                     label: food.name,
                     selected: false,
                     disabled: false,
-                })),
+                }))
+            ];
+
+            choicesInstance.setChoices(
+                choices,
                 'value',
                 'label',
                 true
