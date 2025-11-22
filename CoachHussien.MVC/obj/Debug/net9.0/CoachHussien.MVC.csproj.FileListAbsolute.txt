@@ -168,6 +168,7 @@ D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\bin\Debug\net9.0\ru\Microsoft.Cod
 D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\obj\Debug\net9.0\CoachHussien.MVC.sourcelink.json
 D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\obj\Debug\net9.0\compressed\87l5vjshua-b9sayid5wm.gz
 D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\obj\Debug\net9.0\compressed\x2a51tbhml-61n19gt1b8.gz
 D:\Coach_Hussien\CoachHussien\CoachHussien.MVC\obj\Debug\net9.0\compressed\iywf12cpmv-xtxxf3hu2r.gz

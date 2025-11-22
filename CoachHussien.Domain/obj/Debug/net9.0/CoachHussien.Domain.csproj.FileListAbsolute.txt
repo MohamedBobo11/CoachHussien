@@ -9,3 +9,4 @@ D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\obj\Debug\net9.0\CoachHussien.
 D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\obj\Debug\net9.0\refint\CoachHussien.Domain.dll
 D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\obj\Debug\net9.0\CoachHussien.Domain.pdb
 D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\obj\Debug\net9.0\ref\CoachHussien.Domain.dll
+D:\Coach_Hussien\CoachHussien\CoachHussien.Domain\obj\Debug\net9.0\CoachHussien.Domain.sourcelink.json

@@ -15,3 +15,4 @@ D:\Coach_Hussien\CoachHussien\CoachHussien.Application\obj\Debug\net9.0\refint\C
 D:\Coach_Hussien\CoachHussien\CoachHussien.Application\obj\Debug\net9.0\CoachHussien.Application.pdb
 D:\Coach_Hussien\CoachHussien\CoachHussien.Application\obj\Debug\net9.0\CoachHussien.Application.genruntimeconfig.cache
 D:\Coach_Hussien\CoachHussien\CoachHussien.Application\obj\Debug\net9.0\ref\CoachHussien.Application.dll
+D:\Coach_Hussien\CoachHussien\CoachHussien.Application\obj\Debug\net9.0\CoachHussien.Application.sourcelink.json
